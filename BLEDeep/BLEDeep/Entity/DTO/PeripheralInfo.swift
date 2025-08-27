@@ -12,5 +12,5 @@ struct PeripheralInfo: Equatable, Identifiable {
 
     let uuid: CBUUID
     let name: String
-    let info: CBPeripheral
+    let info: CBPeripheral?
 }

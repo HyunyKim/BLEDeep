@@ -14,4 +14,10 @@ protocol BLEServiceable {
     var prepheralManager: CBPeripheralManager! { get }
     
     var preparalInfo: CurrentValueSubject<[PeripheralInfo], Never> { get }
+    
+    func startScanning(timeout: Int, targeting: Bool)
+    func stopScanning()
+    
+    func startAdvertising()
+    func stopAdvertising()
 }
